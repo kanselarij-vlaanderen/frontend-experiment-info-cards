@@ -1,16 +1,14 @@
-<section class="container mx-auto mt-4">
-  <h1 class="text-4xl text-blue-500">Hello cards app</h1>
-  <p class="text-gray-800">This application allows us to play with info and warning cards as described by Johan Ronsse</p>
-</section>
-
 <AnimatedTools />
 
 <Info />
 
-<section>
-  <button class="m-2 px-2 py-1 bg-blue-100 rounded border border-grey-400 bg-grey-200" {{on "click" this.addInfoMessage}}>Add info</button>
+<section class="container mx-auto mt-4">
+  <h1 class="text-4xl text-blue-500">Hello cards app</h1>
+  <p class="text-gray-800">This application allows us to play with info and warning cards as described by Johan Ronsse</p>
+
+  <button class="mt-4 px-2 py-1 bg-blue-100 rounded border border-grey-400 bg-grey-200" {{on "click" this.addInfoMessage}}>Add info</button>
   <button class="m-2 px-2 py-1 bg-orange-100 rounded border border-grey-400 bg-grey-200" {{on "click" this.addWarningMessage}}>Add warning</button>
   <button class="m-2 px-2 py-1 bg-red-100 rounded border border-grey-400 bg-grey-200" {{on "click" this.addErrorMessage}}>Add error</button>
 </section>
-{{outlet}}
 
+{{outlet}}
