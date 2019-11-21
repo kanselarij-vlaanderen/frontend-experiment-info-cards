@@ -1,0 +1,9 @@
+<div class="bg-orange-200 px-4 py-2 rounded my-2">
+  <span class="font-bold text-gray-800">{{this.title}}</span>
+  <div class="text-gray-200">{{this.content}}</div>
+  <button
+    {{on "click" this.undo}}
+    class="underline text-orange-800">
+    Undo
+  </button>
+</div>
