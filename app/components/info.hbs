@@ -1,7 +1,9 @@
 <div class="w-56 fixed bottom-0 right-0 m-4">
   {{yield}}
 
-  {{#each this.info.cards as |card|}}
-    {{component card.component info=card}}
-  {{/each}}
+  <AnimatedContainer>
+    {{#animated-each this.info.cards use=this.transition as |card|}}
+      {{component card.component info=card}}
+    {{/animated-each}}
+  </AnimatedContainer>
 </div>
