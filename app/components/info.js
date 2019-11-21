@@ -7,8 +7,10 @@ export default class InfoComponent extends Component {
   @service info;
 
   *transition({keptSprites, removedSprites, insertedSprites}) {
-    for( const sprite of keptSprites )
+    for( const sprite of keptSprites ) {
       move(sprite);
+      fadeIn(sprite);
+    }
 
     for( const sprite of removedSprites ) {
       sprite.applyStyles({"z-index": -1});
